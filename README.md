@@ -50,7 +50,12 @@ cd MASt3R-SLAM/
 
 pip install -e thirdparty/mast3r
 pip install -e thirdparty/in3d
-pip install --no-build-isolation -e .
+
+# lietorch install 
+cd thirdparty/lietorch && python setup.py install
+
+# mast3r_slam_backends install
+cd MASt3R-SLAM && python setup.py install
 
 # Optionally install torchcodec for faster mp4 loading
 pip install torchcodec==0.1
