@@ -10,7 +10,7 @@ has_cuda = torch.cuda.is_available()
 
 include_dirs = [
     os.path.join(ROOT, "mast3r_slam/backend/include"),
-    os.path.join(ROOT, "thirdparty/eigen"),
+    os.path.join(ROOT, "thirdparty/lietorch/eigen"),
 ]
 
 sources = [
