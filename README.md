@@ -52,7 +52,10 @@ pip install -e thirdparty/mast3r
 pip install -e thirdparty/in3d
 
 # lietorch install 
-cd thirdparty/lietorch && python setup.py install
+cd thirdparty/lietorch
+# forget add submodule from eigen >_<
+git clone https://github.com/LcungCroooB/eigen.git  
+python setup.py install
 
 # mast3r_slam_backends install
 cd MASt3R-SLAM && python setup.py install
